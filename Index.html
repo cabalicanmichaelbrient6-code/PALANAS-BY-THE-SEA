@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PALANAS BY THE SEA in LOWER BECERRIL</title>
+
+<meta name="description" content="Palanas by the Sea is a beach resort in Lower Becerril offering seaside relaxation, ocean views, cottages, swimming, leisure activities, and event services.">
+<meta name="keywords" content="Palanas by the Sea, beach resort, Lower Becerril beach, seaside getaway, ocean view, coastal paradise, swimming, leisure, events, cottages">
+
+<style>
+
+/* ---------------- GLOBAL RESET ---------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #eaf6ff;
+}
+
+/* ---------------- HERO SECTION ---------------- */
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: url("background.jpg") center center / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+.hero > * {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: clamp(60px, 13vw, 150px);
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: white;
+    text-shadow: 0 0 25px black;
+}
+
+.hero-subtitle {
+    font-size: clamp(26px, 5vw, 50px);
+    color: #e8faff;
+    margin: 15px 0 45px;
+    text-shadow: 0 0 20px black;
+}
+
+/* ---------------- NAV ---------------- */
+nav {
+    display: flex;
+    gap: 25px;
+    background: rgba(255,255,255,0.22);
+    padding: 15px 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(14px);
+}
+
+nav a {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c0f7ff;
+    text-shadow: 0 0 10px white;
+}
+
+/* ---------------- MAIN ---------------- */
+.main-container {
+    max-width: 1100px;
+    margin: 80px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+}
+
+/* ---------------- TITLES ---------------- */
+.section-title {
+    font-size: 51px;
+    font-weight: 900;
+    color: #000;
+    text-align: center;
+    margin: 60px 0 30px;
+}
+
+/* ---------------- GALLERY ---------------- */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 35px;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card b {
+    display: block;
+    margin-top: 12px;
+    font-size: 22px;
+    color: #0077b6;
+    text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <h1 class="hero-title">PALANAS BY THE SEA</h1>
+    <p class="hero-subtitle">Life Is Better By The Shore</p>
+
+    <nav>
+        <a href="meggo.html">HOME</a>
+        <a href="event.html">EVENT</a>
+        <a href="contact.html">CONTACT US</a>
+        <a href="product.html">PRODUCT</a>
+    </nav>
+</section>
+
+<!-- MAIN CONTENT -->
+<div class="main-container">
+
+<h1 class="section-title">Welcome to Palanas by the Sea</h1>
+
+<div class="gallery">
+    <div class="card">
+        <img src="he.jpg" alt="Entrance">
+        <b>Entrance</b>
+    </div>
+    <div class="card">
+        <img src="c.jpg" alt="Sea Shore">
+        <b>Sea Shore</b>
+    </div>
+    <div class="card">
+        <img src="he.jpg" alt="Entrance View">
+        <b>Entrance</b>
+    </div>
+    <div class="card">
+        <img src="c.jpg" alt="Sea View">
+        <b>Sea Shore</b>
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>
